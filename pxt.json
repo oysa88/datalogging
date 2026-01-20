@@ -1,0 +1,34 @@
+{
+    "name": "datalogger",
+    "description": "Logg data til interminne på micro:bit (V2).",
+    "dependencies": {
+        "core": "*",
+        "flashlog": "*"
+    },
+    "files": [
+        "datalogger.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "targetVersions": {
+        "target": "8.0.18",
+        "pxt": "12.0.16",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj",
+    "disablesVariants": [
+        "mbdal"
+    ],
+    "yotta": {
+        "config": {
+            "MICROBIT_BLE_UTILITY_SERVICE": 1,
+            "MICROBIT_BLE_UTILITY_SERVICE_PAIRING": 1
+        }
+    },
+    "icon": "https://cdn.makecode.com/blob/0703ee5e0cc718390736601fbaaefe3f429c0ef3/static/libs/datalogger.png"
+}

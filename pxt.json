@@ -6,7 +6,8 @@
         "flashlog": "*"
     },
     "files": [
-        "datalogger.ts"
+        "datalogger.ts",
+        "_locales/nb/datalogger-strings.json"
     ],
     "testFiles": [
         "test.ts"

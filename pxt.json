@@ -1,5 +1,5 @@
 {
-    "name": "datalogger",
+    "name": "datalogger - Copy",
     "description": "Logg data til interminne på micro:bit (V2).",
     "dependencies": {
         "core": "*",

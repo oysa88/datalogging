@@ -23,5 +23,11 @@
   "Fast": "Rask",
   "Full": "Fullstendig",
   "Off": "Av",
-  "On": "På"
+  "On": "På",
+  "milliseconds": "millisekunder",
+  "seconds": "sekunder",
+  "minutes": "minutter",
+  "hours": "timer",
+  "days": "dager",
+  "months": "måneder"
 }

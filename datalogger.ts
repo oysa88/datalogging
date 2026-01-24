@@ -1,5 +1,5 @@
 /**
- * Log data to flash storage
+ * Lagre data til flash-minne
  */
 //% block="Datalogger"
 //% icon="\uf0ce"

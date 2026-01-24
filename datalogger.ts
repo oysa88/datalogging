@@ -1,14 +1,14 @@
 /**
- * Lagre data til flash-minne
+ * Log data to flash storage
  */
-//% block="Datalogger"
+//% block="Data Logger"
 //% icon="\uf0ce"
 //% color="#378273"
 namespace datalogger {
     export enum DeleteType {
-        //% block="fort"
+        //% block="fast"
         Fast,
-        //% block="fullt"
+        //% block="full"
         Full
     }
 
@@ -60,7 +60,7 @@ namespace datalogger {
      * @param value the value to set.
      * @returns A new value that can be stored in flash storage using log data
      */
-    //% block="kolonne $column verdi $value"
+    //% block="column $column value $value"
     //% value.shadow=math_number
     //% column.shadow=datalogger_columnfield
     //% blockId=dataloggercreatecolumnvalue
@@ -70,7 +70,7 @@ namespace datalogger {
         return new ColumnValue(column, value);
     }
 
-    //% block="$kolonne"
+    //% block="$column"
     //% blockId=datalogger_columnfield
     //% group="micro:bit (V2)"
     //% blockHidden=true shim=TD_ID
@@ -84,7 +84,7 @@ namespace datalogger {
      * Log data to flash storage
      * @param data Array of data to be logged to flash storage
      */
-    //% block="logg data array $data"
+    //% block="log data array $data"
     //% blockId=dataloggerlogdata
     //% data.shadow=lists_create_with
     //% data.defl=dataloggercreatecolumnvalue
@@ -119,7 +119,7 @@ namespace datalogger {
      * @param data9 [optional] ninth column and value to be logged
      * @param data10 [optional] tenth column and value to be logged
      */
-    //% block="logg data $data1||$data2 $data3 $data4 $data5 $data6 $data7 $data8 $data9 $data10"
+    //% block="log data $data1||$data2 $data3 $data4 $data5 $data6 $data7 $data8 $data9 $data10"
     //% blockId=dataloggerlog
     //% data1.shadow=dataloggercreatecolumnvalue
     //% data2.shadow=dataloggercreatecolumnvalue
@@ -167,7 +167,7 @@ namespace datalogger {
      * Set the columns for future data logging
      * @param cols Array of the columns that will be logged.
      */
-    //% block="sett kolonner $cols"
+    //% block="set columns $cols"
     //% blockId=dataloggersetcolumns
     //% data.shadow=list_create_with
     //% data.defl=datalogger_columnfield
@@ -194,7 +194,7 @@ namespace datalogger {
      * @param col9 Title for ninth column to be added
      * @param col10 Title for tenth column to be added
      */
-    //% block="sett kolonner $col1||$col2 $col3 $col4 $col5 $col6 $col7 $col8 $col9 $col10"
+    //% block="set columns $col1||$col2 $col3 $col4 $col5 $col6 $col7 $col8 $col9 $col10"
     //% blockId=dataloggersetcolumntitles
     //% inlineInputMode="variable"
     //% inlineInputModeLimit=1
@@ -234,7 +234,7 @@ namespace datalogger {
      * overwriteable / deletable in the future.
      * @param deleteType optional set whether a deletion will be fast or full
      */
-    //% block="slett logg||$deleteType"
+    //% block="delete log||$deleteType"
     //% blockId=dataloggerdeletelog
     //% group="micro:bit (V2)"
     //% weight=60 help=datalogger/delete-log
@@ -248,7 +248,7 @@ namespace datalogger {
      * Register an event to run when no more data can be logged.
      * @param handler code to run when the log is full and no more data can be stored.
      */
-    //% block="når logg er full"
+    //% block="on log full"
     //% blockId="on log full"
     //% group="micro:bit (V2)"
     //% weight=40 help=datalogger/on-log-full
@@ -261,7 +261,7 @@ namespace datalogger {
      * Set the format for timestamps
      * @param format Format in which to show the timestamp. Setting FlashLogTimeStampFormat.None will disable the timestamp.
      */
-    //% block="sett tidsstempel $format"
+    //% block="set timestamp $format"
     //% blockId=dataloggertoggleincludetimestamp
     //% format.defl=FlashLogTimeStampFormat.None
     //% group="micro:bit (V2)"
@@ -275,7 +275,7 @@ namespace datalogger {
      * Set whether data is mirrored to serial or not.
      * @param on if true, data that is logged will be mirrored to serial
      */
-    //% block="speil data til serial $on"
+    //% block="mirror data to serial $on"
     //% blockId=dataloggertogglemirrortoserial
     //% on.shadow=toggleOnOff
     //% on.defl=false

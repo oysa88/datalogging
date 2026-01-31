@@ -19,6 +19,7 @@
     "supportedTargets": [
         "microbit"
     ],
+    "preferredEditor": "tsprj",
     "disablesVariants": [
         "mbdal"
     ],

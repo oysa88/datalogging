@@ -1,5 +1,5 @@
 
-> Åpne denne siden på [https://oysa88.github.io/datalogger/](https://oysa88.github.io/datalogger/)
+> Åpne denne siden på [https://oysa88.github.io/datalogging/](https://oysa88.github.io/datalogging/)
 
 ## Bruk som utvidelse
 

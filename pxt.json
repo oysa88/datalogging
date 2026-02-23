@@ -6,7 +6,7 @@
         "flashlog": "*"
     },
     "files": [
-        "datalogger.ts"
+        "datalogging.ts"
     ],
     "testFiles": [
         "test.ts"

@@ -378,3 +378,4 @@ namespace datalogging {
         return flashlog.getRows(fromRowIndex, nRows);
     }
 }
+

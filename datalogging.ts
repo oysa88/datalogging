@@ -1,10 +1,10 @@
 /**
  * Lagre data til flash-minne
  */
-//% block="Datalogger"
+//% block="Datalogging"
 //% icon="\uf0ce"
 //% color="#378273"
-namespace datalogger {
+namespace datalogging {
     export enum DeleteType {
         //% block="raskt"
         Fast,
@@ -62,20 +62,20 @@ namespace datalogger {
      */
     //% block="kolonne $column verdi $value"
     //% value.shadow=math_number
-    //% column.shadow=datalogger_columnfield
-    //% blockId=dataloggercreatecolumnvalue
+    //% column.shadow=datalogging_columnfield
+    //% blockId=dataloggingcreatecolumnvalue
     //% group="micro:bit (V2)"
-    //% weight=80 help=datalogger/create-cv
+    //% weight=80 help=datalogging/create-cv
     export function createCV(column: string, value: any): ColumnValue {
         return new ColumnValue(column, value);
     }
 
     //% block="$column"
-    //% blockId=datalogger_columnfield
+    //% blockId=datalogging_columnfield
     //% group="micro:bit (V2)"
     //% blockHidden=true shim=TD_ID
     //% column.fieldEditor="autocomplete" column.fieldOptions.decompileLiterals=true
-    //% column.fieldOptions.key="dataloggercolumn"
+    //% column.fieldOptions.key="dataloggingcolumn"
     export function _columnField(column: string) {
         return column
     }
@@ -85,9 +85,9 @@ namespace datalogger {
      * @param data Array of data to be logged to flash storage
      */
     //% block="lagre data array $data"
-    //% blockId=dataloggerlogdata
+    //% blockId=datalogginglogdata
     //% data.shadow=lists_create_with
-    //% data.defl=dataloggercreatecolumnvalue
+    //% data.defl=dataloggingcreatecolumnvalue
     //% group="micro:bit (V2)"
     //% blockHidden=true
     //% weight=100
@@ -130,52 +130,52 @@ namespace datalogger {
      * @param data20 [optional] twentieth column and value to be logged
      */
     //% block="logg data $data1||$data2 $data3 $data4 $data5 $data6 $data7 $data8 $data9 $data10 $data11 $data12 $data13 $data14 $data15 $data16 $data17 $data18 $data19 $data20"
-    //% blockId=dataloggerlog
-    //% data1.shadow=dataloggercreatecolumnvalue
-    //% data2.shadow=dataloggercreatecolumnvalue
-    //% data3.shadow=dataloggercreatecolumnvalue
-    //% data4.shadow=dataloggercreatecolumnvalue
-    //% data5.shadow=dataloggercreatecolumnvalue
-    //% data6.shadow=dataloggercreatecolumnvalue
-    //% data7.shadow=dataloggercreatecolumnvalue
-    //% data8.shadow=dataloggercreatecolumnvalue
-    //% data9.shadow=dataloggercreatecolumnvalue
-    //% data10.shadow=dataloggercreatecolumnvalue
-    //% data11.shadow=dataloggercreatecolumnvalue
-    //% data12.shadow=dataloggercreatecolumnvalue
-    //% data13.shadow=dataloggercreatecolumnvalue
-    //% data14.shadow=dataloggercreatecolumnvalue
-    //% data15.shadow=dataloggercreatecolumnvalue
-    //% data16.shadow=dataloggercreatecolumnvalue
-    //% data17.shadow=dataloggercreatecolumnvalue
-    //% data18.shadow=dataloggercreatecolumnvalue
-    //% data19.shadow=dataloggercreatecolumnvalue
-    //% data20.shadow=dataloggercreatecolumnvalue
+    //% blockId=datalogginglog
+    //% data1.shadow=dataloggingcreatecolumnvalue
+    //% data2.shadow=dataloggingcreatecolumnvalue
+    //% data3.shadow=dataloggingcreatecolumnvalue
+    //% data4.shadow=dataloggingcreatecolumnvalue
+    //% data5.shadow=dataloggingcreatecolumnvalue
+    //% data6.shadow=dataloggingcreatecolumnvalue
+    //% data7.shadow=dataloggingcreatecolumnvalue
+    //% data8.shadow=dataloggingcreatecolumnvalue
+    //% data9.shadow=dataloggingcreatecolumnvalue
+    //% data10.shadow=dataloggingcreatecolumnvalue
+    //% data11.shadow=dataloggingcreatecolumnvalue
+    //% data12.shadow=dataloggingcreatecolumnvalue
+    //% data13.shadow=dataloggingcreatecolumnvalue
+    //% data14.shadow=dataloggingcreatecolumnvalue
+    //% data15.shadow=dataloggingcreatecolumnvalue
+    //% data16.shadow=dataloggingcreatecolumnvalue
+    //% data17.shadow=dataloggingcreatecolumnvalue
+    //% data18.shadow=dataloggingcreatecolumnvalue
+    //% data19.shadow=dataloggingcreatecolumnvalue
+    //% data20.shadow=dataloggingcreatecolumnvalue
     //% inlineInputMode="variable"
     //% inlineInputModeLimit=1
     //% group="micro:bit (V2)"
-    //% weight=100 help=datalogger/log
+    //% weight=100 help=datalogging/log
     export function log(
-        data1: datalogger.ColumnValue,
-        data2?: datalogger.ColumnValue,
-        data3?: datalogger.ColumnValue,
-        data4?: datalogger.ColumnValue,
-        data5?: datalogger.ColumnValue,
-        data6?: datalogger.ColumnValue,
-        data7?: datalogger.ColumnValue,
-        data8?: datalogger.ColumnValue,
-        data9?: datalogger.ColumnValue,
-        data10?: datalogger.ColumnValue,
-        data11?: datalogger.ColumnValue,
-        data12?: datalogger.ColumnValue,
-        data13?: datalogger.ColumnValue,
-        data14?: datalogger.ColumnValue,
-        data15?: datalogger.ColumnValue,
-        data16?: datalogger.ColumnValue,
-        data17?: datalogger.ColumnValue,
-        data18?: datalogger.ColumnValue,
-        data19?: datalogger.ColumnValue,
-        data20?: datalogger.ColumnValue
+        data1: datalogging.ColumnValue,
+        data2?: datalogging.ColumnValue,
+        data3?: datalogging.ColumnValue,
+        data4?: datalogging.ColumnValue,
+        data5?: datalogging.ColumnValue,
+        data6?: datalogging.ColumnValue,
+        data7?: datalogging.ColumnValue,
+        data8?: datalogging.ColumnValue,
+        data9?: datalogging.ColumnValue,
+        data10?: datalogging.ColumnValue,
+        data11?: datalogging.ColumnValue,
+        data12?: datalogging.ColumnValue,
+        data13?: datalogging.ColumnValue,
+        data14?: datalogging.ColumnValue,
+        data15?: datalogging.ColumnValue,
+        data16?: datalogging.ColumnValue,
+        data17?: datalogging.ColumnValue,
+        data18?: datalogging.ColumnValue,
+        data19?: datalogging.ColumnValue,
+        data20?: datalogging.ColumnValue
     ): void {
         logData(
             [
@@ -208,9 +208,9 @@ namespace datalogger {
      * @param cols Array of the columns that will be logged.
      */
     //% block="sett kolonne $cols"
-    //% blockId=dataloggersetcolumns
+    //% blockId=dataloggingsetcolumns
     //% data.shadow=list_create_with
-    //% data.defl=datalogger_columnfield
+    //% data.defl=datalogging_columnfield
     //% group="micro:bit (V2)"
     //% blockHidden=true
     //% weight=70
@@ -245,31 +245,31 @@ namespace datalogger {
      * @param col20 Title for twentieth column to be added
      */
     //% block="sett kolonner $col1||$col2 $col3 $col4 $col5 $col6 $col7 $col8 $col9 $col10 $col11 $col12 $col13 $col14 $col15 $col16 $col17 $col18 $col19 $col20"
-    //% blockId=dataloggersetcolumntitles
+    //% blockId=dataloggingsetcolumntitles
     //% inlineInputMode="variable"
     //% inlineInputModeLimit=1
     //% group="micro:bit (V2)"
-    //% weight=70 help=datalogger/set-column-titles
-    //% col1.shadow=datalogger_columnfield
-    //% col2.shadow=datalogger_columnfield
-    //% col3.shadow=datalogger_columnfield
-    //% col4.shadow=datalogger_columnfield
-    //% col5.shadow=datalogger_columnfield
-    //% col6.shadow=datalogger_columnfield
-    //% col7.shadow=datalogger_columnfield
-    //% col8.shadow=datalogger_columnfield
-    //% col9.shadow=datalogger_columnfield
-    //% col10.shadow=datalogger_columnfield
-    //% col11.shadow=datalogger_columnfield
-    //% col12.shadow=datalogger_columnfield
-    //% col13.shadow=datalogger_columnfield
-    //% col14.shadow=datalogger_columnfield
-    //% col15.shadow=datalogger_columnfield
-    //% col16.shadow=datalogger_columnfield
-    //% col17.shadow=datalogger_columnfield
-    //% col18.shadow=datalogger_columnfield
-    //% col19.shadow=datalogger_columnfield
-    //% col20.shadow=datalogger_columnfield
+    //% weight=70 help=datalogging/set-column-titles
+    //% col1.shadow=datalogging_columnfield
+    //% col2.shadow=datalogging_columnfield
+    //% col3.shadow=datalogging_columnfield
+    //% col4.shadow=datalogging_columnfield
+    //% col5.shadow=datalogging_columnfield
+    //% col6.shadow=datalogging_columnfield
+    //% col7.shadow=datalogging_columnfield
+    //% col8.shadow=datalogging_columnfield
+    //% col9.shadow=datalogging_columnfield
+    //% col10.shadow=datalogging_columnfield
+    //% col11.shadow=datalogging_columnfield
+    //% col12.shadow=datalogging_columnfield
+    //% col13.shadow=datalogging_columnfield
+    //% col14.shadow=datalogging_columnfield
+    //% col15.shadow=datalogging_columnfield
+    //% col16.shadow=datalogging_columnfield
+    //% col17.shadow=datalogging_columnfield
+    //% col18.shadow=datalogging_columnfield
+    //% col19.shadow=datalogging_columnfield
+    //% col20.shadow=datalogging_columnfield
     export function setColumnTitles(
         col1: string,
         col2?: string,
@@ -305,9 +305,9 @@ namespace datalogger {
      * @param deleteType optional set whether a deletion will be fast or full
      */
     //% block="slett logg||$deleteType"
-    //% blockId=dataloggerdeletelog
+    //% blockId=dataloggingdeletelog
     //% group="micro:bit (V2)"
-    //% weight=60 help=datalogger/delete-log
+    //% weight=60 help=datalogging/delete-log
     export function deleteLog(deleteType?: DeleteType): void {
         init();
         flashlog.clear(deleteType === DeleteType.Full);
@@ -321,7 +321,7 @@ namespace datalogger {
     //% block="når logg er full"
     //% blockId="on log full"
     //% group="micro:bit (V2)"
-    //% weight=40 help=datalogger/on-log-full
+    //% weight=40 help=datalogging/on-log-full
     export function onLogFull(handler: () => void): void {
         init();
         onLogFullHandler = handler;
@@ -332,10 +332,10 @@ namespace datalogger {
      * @param format Format in which to show the timestamp. Setting FlashLogTimeStampFormat.None will disable the timestamp.
      */
     //% block="sett tidsstempel $format"
-    //% blockId=dataloggertoggleincludetimestamp
+    //% blockId=dataloggingtoggleincludetimestamp
     //% format.defl=FlashLogTimeStampFormat.None
     //% group="micro:bit (V2)"
-    //% weight=30 help=datalogger/include-timestamp
+    //% weight=30 help=datalogging/include-timestamp
     export function includeTimestamp(format: FlashLogTimeStampFormat): void {
         init();
         flashlog.setTimeStamp(format);
@@ -346,10 +346,10 @@ namespace datalogger {
      * @param on if true, data that is logged will be mirrored to serial
      */
     //% block="speil data til serial $on"
-    //% blockId=dataloggertogglemirrortoserial
+    //% blockId=dataloggingtogglemirrortoserial
     //% on.shadow=toggleOnOff
     //% on.defl=false
-    //% weight=25 help=datalogger/mirror-to-serial
+    //% weight=25 help=datalogging/mirror-to-serial
     export function mirrorToSerial(on: boolean): void {
         // TODO:/note intentionally does not have group, as having the same group for all
         // blocks in a category causes the group to be elided.
@@ -358,7 +358,7 @@ namespace datalogger {
     }
 
     /**
-     * Number of rows currently used by the datalogger, start counting at fromRowIndex
+     * Number of rows currently used by the datalogging, start counting at fromRowIndex
      * Treats the header as the first row
      * @param fromRowIndex 0-based index of start
      * @returns header + rows

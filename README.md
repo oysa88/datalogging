@@ -1,5 +1,5 @@
 
-> Åpne denne siden på [https://oysa88.github.io/datalogging/](https://oysa88.github.io/datalogging/)
+> Åpne denne siden på [https://oysa88.github.io/datalogger/](https://oysa88.github.io/datalogger/)
 
 ## Bruk som utvidelse
 
@@ -8,7 +8,7 @@ Dette kodeområdet kan bli lagt til som en **utvidelse** i MakeCode.
 * åpne [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * klikk på **Nytt prosjekt**
 * klikk på **Utvidelser** i menyen under tannhjulet
-* søk etter **https://github.com/oysa88/datalogging** og importér
+* søk etter **https://github.com/oysa88/datalogger** og importér
 
 ## Rediger dette prosjektet
 
@@ -16,7 +16,7 @@ For å redigere dette kodeområdet i MakeCode.
 
 * åpne [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * klikk på **Importer** og så på **Importér URL**
-* lim inn **https://github.com/oysa88/datalogging** og klikk på importér
+* lim inn **https://github.com/oysa88/datalogger** og klikk på importér
 
 #### Metadata (brukes for søk, visualisering)
 

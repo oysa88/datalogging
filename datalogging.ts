@@ -74,7 +74,9 @@ namespace datalogging {
     //% blockId=datalogging_columnfield
     //% group="micro:bit (V2)"
     //% blockHidden=true shim=TD_ID
-    //% column.fieldEditor="autocomplete" column.fieldOptions.decompileLiterals=true
+    //% column.fieldEditor="autocomplete" 
+    //% column.fieldOptions.decompileLiterals=true
+    //% column.fieldOptions.maxSuggestions=50
     //% column.fieldOptions.key="dataloggingcolumn"
     export function _columnField(column: string) {
         return column
